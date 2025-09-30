@@ -1,0 +1,27 @@
+{
+  "label_col": "label",
+  "numeric_cols": [
+    "from_acct_type",
+    "to_acct_type",
+    "txn_amt",
+    "txn_date"
+  ],
+  "cat_cols": [
+    "from_acct",
+    "to_acct",
+    "is_self_txn",
+    "txn_time",
+    "currency_type",
+    "channel_type"
+  ],
+  "cat_buckets": {
+    "from_acct": 50000,
+    "to_acct": 50000,
+    "is_self_txn": 50000,
+    "txn_time": 50000,
+    "currency_type": 50000,
+    "channel_type": 50000
+  },
+  "num_classes": 2,
+  "hash_salt": "col_name::value"
+}
